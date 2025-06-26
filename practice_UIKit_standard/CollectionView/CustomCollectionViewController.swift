@@ -32,7 +32,7 @@ class CustomCollectionViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         // layout을 반드시 선언해주어야 한다! 그리고 어떤 레이아웃을 쓸건지 넣어주어야 한다.
         let layout = UICollectionViewFlowLayout() // 제공된 Flow 레이아웃을 넣어준다. 만약 디자이너가 이런걸로 구현 불가능한 것을 원한다? 그럼 UICollectionViewLayout을 서브클래싱해서 각각의 셀들이 나타날 때 어떻게 배치할것인지를 커스텀해야 하겠다..
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         layout.itemSize = .init(width: Const.cellWidth, height: Const.cellHeight)
         // layout.estimatedItemSize // 예상치를 줌으로써 로딩 성능을 향상시키는 방법이 제공된다.
         layout.minimumLineSpacing = Const.lineSpacing // 버티컬 스크롤일때는 행간 간격을 의미한다.
