@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("뷰 로드 잘 됨")
         // Do any additional setup after loading the view.
     }
 
